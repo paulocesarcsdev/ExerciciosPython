@@ -1,6 +1,2 @@
 print("Olá mundo")
-print("teste git")
-print('Paulo Teste github')
-print('agora vai')
-print('Fora Bozonaro teste')
-print('Bozonaro fora')
+print(10+10)
