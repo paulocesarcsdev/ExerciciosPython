@@ -6,22 +6,13 @@ de anos necessários para que a população do país A ultrapasse ou iguale a po
 '''
 
 populacao_a = 80000
-
 populacao_b = 200000
-
-crescimento_a = 0.03
-
-crescimento_b = 0.015
-
 contador = 0
 
 
-
-#print('Total população A {} '.format(total))
-
 while  populacao_a <= populacao_b:
-    populacao_a += populacao_a * crescimento_a
-    populacao_b += populacao_b * crescimento_b
+    populacao_a += populacao_a * 0.03
+    populacao_b += populacao_b * 0.015
     contador += 1
     #print("\n")
     #print(contador)
