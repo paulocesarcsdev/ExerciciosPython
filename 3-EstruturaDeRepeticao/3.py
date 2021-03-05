@@ -50,4 +50,4 @@ while(validador):
         print('Estado civil {} divorcidado(a): '.format(estado_civil))
     else:
         print('Estado civil inválido tente novamente: ')
-    print('Para sair escreva sair: ')
+    #print('Para sair escreva sair: ')

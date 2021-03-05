@@ -4,3 +4,25 @@ uma taxa anual de crescimento de 3% e que a população de B seja 200000 habitan
 com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número
 de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.
 '''
+
+populacao_a = 80000
+
+populacao_b = 200000
+
+crescimento_a = 0.03
+
+crescimento_b = 0.015
+
+contador = 0
+
+
+
+#print('Total população A {} '.format(total))
+
+while  populacao_a <= populacao_b:
+    populacao_a += populacao_a * crescimento_a
+    populacao_b += populacao_b * crescimento_b
+    contador += 1
+    #print("\n")
+    #print(contador)
+print('Total  de anos para igualar as populações {}'.format(contador))
