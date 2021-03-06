@@ -9,3 +9,9 @@ deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
         ...
         5 X 10 = 50
 '''
+
+valor = int(input('Entre com o valor: '))
+print('Tabuada de {}:'.format(valor))
+for i in range(11):
+        print('{} X '.format(valor),i, end=' = ')
+        print(i*valor)
