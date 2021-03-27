@@ -19,4 +19,5 @@ else:
         ultimo = termo
         contador += 1
         print(termo, end =' ')
+        print('\n')
 
