@@ -1,16 +1,13 @@
 '''
-Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120
+Faça um programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a soma dos valores.
 '''
 
-contador = 2
-fatorial = 1
+aux = []
 
-#aux = []
+elemento = 0
 
-n = 5
-fat = 1
-i = 2
-while i <= n:
-        fat = fat*i
-        i += 1
-        print(fat)
+elemento = int(input('Teste lista: '))
+
+aux.append(elemento)
+
+print(aux)
