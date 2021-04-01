@@ -8,7 +8,7 @@ numeros_lista = []
 contador = 0
 num = 0
 
-while(contador <= numeros):
+while(contador <= numeros): 
     num = int(input('Entre com os números: '))
     if(num >= 0 and num <= 1000):
         numeros_lista.append(num)
