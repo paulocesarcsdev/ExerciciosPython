@@ -9,10 +9,10 @@ multiplo = 0
 
 for contador in range(2, valor):
     if (valor % contador == 0):
-        print('Multilo de', contador)
+        print('Multiplo de {}'.format(contador))
         multiplo += 1
         
 if(multiplo == 0 and valor >= 2):
     print("Primo")
 else:
-    print('Tem',multiplo,'multiplo acima de 2 e abaixo de', valor)
+    print('Tem {} multiplo acima de 2 e abaixo de {}'.format(multiplo,valor) )
