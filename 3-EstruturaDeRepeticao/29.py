@@ -19,10 +19,8 @@ while(quantidade_itens > 50):
     print('A quantidade máxima por cliente e de 50 unidades')
     quantidade_itens = int(input('Entre com a quantidade de itens: '))
         
-    
+print('Lojas Quase Dois - Tabela de preços')
 for i in range(quantidade_itens):
     i += 1
     quantidade_pagar =  i * 1.99
-    
-print('Lojas Quase Dois - Tabela de preços')      
-print('{} - R$ {}'.format(i,quantidade_pagar))
+    print('{} - R$ {}'.format(i,quantidade_pagar))
