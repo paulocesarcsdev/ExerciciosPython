@@ -12,3 +12,17 @@ Lojas Quase Dois - Tabela de preços
 ...
 50 - R$ 99.50
 '''
+
+quantidade_itens = int(input('Entre com a quantidade de itens: '))
+
+while(quantidade_itens > 50):
+    print('A quantidade máxima por cliente e de 50 unidades')
+    quantidade_itens = int(input('Entre com a quantidade de itens: '))
+        
+    
+for i in range(quantidade_itens):
+    i += 1
+    quantidade_pagar =  i * 1.99
+    
+print('Lojas Quase Dois - Tabela de preços')      
+print('{} - R$ {}'.format(i,quantidade_pagar))
