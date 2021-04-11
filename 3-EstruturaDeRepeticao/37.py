@@ -16,3 +16,14 @@ Vou montar a tabuada de 5 começando em 4 e terminando em 7:
 Obs: Você deve verificar se o usuário não digitou o final menor que o inicial.
 
 '''
+valor_inicial = 0
+valor_final = 0
+
+montar_tabulada = int(input('Montar a tabuada: '))
+valor_inicial = int(input('Entre com o valor inicial: '))
+valor_final = int(input('Entre com o valor final: '))
+
+
+for i in range(valor_inicial,valor_final+1):
+    calulo = (montar_tabulada * i)
+    print(montar_tabulada,'X ',i,' = ',calulo)
