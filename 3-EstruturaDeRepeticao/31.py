@@ -17,3 +17,31 @@ Troco: R$ 11.00
 ...
 
 '''
+while(True):
+    valor_produto = []
+    contador = 1
+    total_pagar = 0
+    valor_compra = True
+
+    #saida = float(input('Para continuar aperte 1 para sair aperte 0: '))
+    while(valor_compra != 0):
+        valor_compra = float(input('Entre com o valor da compra: '))
+        valor_produto.append(valor_compra)
+        total_pagar = sum(valor_produto)
+
+
+    print('O valor dos produtos foi R$ {}'.format(total_pagar))
+    pagamento = float(input('Informe quanto o cliente pago ao caixa: R$: '))
+    
+    while(pagamento < total_pagar):
+        pagamento = float(input('Dinheiro insuficiente valor R$ {} abaixo da compra, tente novamente: '.format(pagamento)))
+    
+    troco = pagamento - total_pagar
+            
+    print('Lojas Tabajara')    
+    for i in (valor_produto):
+        print('Produto {}: R$ {}'.format(contador,i))
+        contador += 1
+    print('Total: R$ {}'.format(total_pagar))
+    print('Dinheiro R$ {}'.format(total_pagar))
+    print('Troco R$ {} '.format(troco))
