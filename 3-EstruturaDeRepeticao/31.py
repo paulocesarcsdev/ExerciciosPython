@@ -43,5 +43,5 @@ while(True):
         print('Produto {}: R$ {}'.format(contador,i))
         contador += 1
     print('Total: R$ {}'.format(total_pagar))
-    print('Dinheiro R$ {}'.format(total_pagar))
+    print('Dinheiro R$ {}'.format(pagamento))
     print('Troco R$ {} '.format(troco))
