@@ -8,37 +8,39 @@ do mais gordo e do mais magro, além da média das alturas e dos pesos dos clien
 
 '''
 
-codigos = []
-alturas = []
-pesos = []
-codigo = True
+clientes = []
+codigo = 1
 contador = 1
 
+maior_altura = 0
+menor_altura = 0
+maior_peso = 0
+manor_peso = 0
 
-print('Para sair presione 0 ')
-while(codigo != 0):
-    codigo = int(input('Entre com o código do cliente {} : '.format(contador)))
-    codigos.append(codigo)
-    altura = float(input('Entre com altura cm: '))
-    alturas.append(altura)
-    peso = float(input('Entre com peso kg : '))
-    pesos.append(peso)
-    contador += 1
-    
-    #Calculos
-    
-    maior_altura = max(alturas)
-    menor_altura = min(alturas)
-    maior_peso = max(pesos)
-    manor_peso = min(pesos)
-                
-    for i in codigos:
-        print('Códigos {} '.format(i,'\n'))
-
-#print('Codigo ',codigos)
+while(codigo):
+    if codigo:
+        codigo = int(input('Entre com o código do cliente {} : '.format(contador)))
+        altura = float(input('Entre com altura cm: '))
+        peso = float(input('Entre com peso kg : '))
+        clientes.append( {'Codigo': codigo, 'Altura': altura, 'Peso': peso} )
+        contador += 1
+        
+      #Calculos
+    for i in clientes:
+        if i['Altura'] > maior_altura:
+            codigo_maior = i['Codigo']
+            maior_altura = i['Altura']
+        if i['Altura'] < menor_altura:
+            codigo_menor = i['Codigo']
+            menor_altura = i['Altura']
+        if i['Peso'] > maior_peso:
+            codigo_maiorPeso = i['Codigo']
+            maior_peso = i['Peso']
+        if i['Peso'] < menor_altura:
+            codigo_menorPeso = i['Codigo']
+            codigo_menor = i['Peso']
+            
 print('Maior altura cm: ', maior_altura)
-print('Manor altura cm: ', menor_altura)
+print('Menor altura cm: ', menor_altura)
 print('Mais gordo kg: ', maior_peso)
 print('Mais magro kg: ', manor_peso)
-print('Media das alturas cm :',sum(alturas) / len(alturas) )
-print('Media dos pesos kg: ', sum(pesos) / len(pesos))

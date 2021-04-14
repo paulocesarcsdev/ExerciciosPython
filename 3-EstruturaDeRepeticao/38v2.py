@@ -7,6 +7,7 @@ Ao encerrar o programa também deve ser informados os códigos e valores do clen
 do mais gordo e do mais magro, além da média das alturas e dos pesos dos clientes
 
 '''
+
 codigos = []
 alturas = []
 pesos = []
