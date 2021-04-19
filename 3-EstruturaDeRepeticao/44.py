@@ -15,14 +15,9 @@ Considere que o cliente deve informar quando o pedido deve ser encerrado.
 
 '''
 
-codigo = -1
-quantidade = -1
-cardapio = {100:1.20, 101:1.30, 102:1.50, 103:1.20, 104:1.30, 105:1.00}
-
-while(codigo != 0 or quantidade != 0):
-    codigo = int(input('Entre com o código do pedido: '))
-    quantidade = int(input('Quantidade desejada: '))
-    
-    for k,v in cardapio.items():
-        valor_pedido = quantidade * v
-        print(valor_pedido)
+cardapio = ['Cachorro Quente', 'Bauru Simples', 'Bauru com ovo', 'Hambúrguer', 'Cheeseburguer', 'Refrigerante']
+codigos = [100, 101, 102, 103, 104, 105]
+preco = [1.20, 1.30, 1.50, 1.20, 1.30, 1.00]
+codigo = True
+numero_pedido = 1
+pedidos = []

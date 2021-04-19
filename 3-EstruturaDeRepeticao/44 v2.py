@@ -19,9 +19,11 @@ codigo = -1
 quantidade = -1
 cardapio = {100:1.20, 101:1.30, 102:1.50, 103:1.20, 104:1.30, 105:1.00}
 
-while(codigo != 0 or quantidade != 0):
+while(codigo != 0):
     codigo = int(input('Entre com o código do pedido: '))
     quantidade = int(input('Quantidade desejada: '))
+    if codigo == 0:
+        break
     
     if codigo == 100:
         cachorro_quente = quantidade * 1.20
