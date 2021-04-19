@@ -23,7 +23,7 @@ numero_pedido = 1
 pedidos = []
 
 while codigo != 0:
-    print('Número do pedido º{}'.format(numero_pedido))
+    print('Número do pedido º {}'.format(numero_pedido))
     codigo = int(input('Entre com o cógido: '))
     if codigo == 0:
         break
