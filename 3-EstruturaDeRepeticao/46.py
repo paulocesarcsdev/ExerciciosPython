@@ -26,3 +26,18 @@ Após concluir isto você poderia incrementar o programa permitindo que o profes
 
 '''
 
+gabarito = ['A', 'B', 'C', 'D', 'E', 'E', 'D', 'C', 'B', 'A']
+
+respostas = []
+sair = True
+contador = 0
+corretas = 0
+
+while sair != 'n':
+    resposta = input('Entre com a Letra correspondente a sua resposta: ')
+    respostas.append(resposta)
+    
+    if respostas == gabarito:
+        corretas += 1
+        
+print(corretas)
