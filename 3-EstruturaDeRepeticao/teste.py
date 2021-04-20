@@ -9,8 +9,8 @@ notas = []
 sair = True
 
 aluno = 1
-while(sair != 0):
-    print("\n" * 5)
+while sair != 'n':
+    print("\n" * 3)
     print("Aluno n°", aluno, ":")
 
     for i in range(10):
@@ -22,5 +22,5 @@ while(sair != 0):
             soma += 1
         alunos.append(soma)
     aluno += 1
-    continuar = input("Outro aluno vai utilizar o sistema? [s/n] : ")
+    sair = input("Outro aluno vai utilizar o sistema? [s/n] : ")
     print(alunos)

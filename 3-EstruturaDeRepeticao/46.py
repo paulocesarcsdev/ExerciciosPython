@@ -25,19 +25,29 @@ Gabarito da Prova:
 Após concluir isto você poderia incrementar o programa permitindo que o professor digite o gabarito da prova antes dos alunos usarem o programa.
 
 '''
-
 gabarito = ['A', 'B', 'C', 'D', 'E', 'E', 'D', 'C', 'B', 'A']
 
-respostas = []
-sair = True
-contador = 0
-corretas = 0
+#respostas = ['A', 'B', 'C', 'D', 'E', 'E', 'D', 'C', 'G', 'H']
 
+respostas = []
+alunos = []
+soma = 0
+notas = []
+sair = True
+
+aluno = 1
 while sair != 'n':
-    resposta = input('Entre com a Letra correspondente a sua resposta: ')
-    respostas.append(resposta)
-    
-    if respostas == gabarito:
-        corretas += 1
-        
-print(corretas)
+    print("\n" * 3)
+    print("Aluno n°", aluno, ":")
+
+    for i in range(10):
+        resposta = input('Entre com a letra das repostas: ')
+        respostas.append(resposta)
+
+    for i in range(10):
+        if respostas[i] == gabarito[i]:
+            soma += 1
+        alunos.append(soma)
+    aluno += 1
+    sair = input("Outro aluno vai utilizar o sistema? [s/n] : ")
+    print(alunos)
