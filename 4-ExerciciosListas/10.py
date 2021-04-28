@@ -7,7 +7,7 @@ vetor_a = []
 vetor_b = []
 vetor_c = []
 
-for i in range(5):
+for i in range(10):
     a = int(input('Vetor A:'))
     vetor_a.append(a)
     b = int(input('Vetor B: '))
