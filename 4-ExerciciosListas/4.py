@@ -10,7 +10,7 @@ aux = []
 contador = 1
 contador_caracteres = 0
 print('*********Entre com dez caracteres*********')
-for i in range(5):
+for _ in range(5):
     caracter = input(str('{} : '.format(contador)))
     caracteres.append(caracter)
     if caracter in vogais:

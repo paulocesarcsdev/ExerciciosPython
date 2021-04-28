@@ -7,7 +7,7 @@ numeros = []
 par = []
 impar = []
 
-for i in range(20):
+for _ in range(20):
     numero = int(input('Entre com os números: '))
     numeros.append(numero)
     
