@@ -19,6 +19,7 @@ for i in range(10):
     vetor_d.append(b)
     vetor_d.append(c)
     
-print(vetor_a)
-print(vetor_b)
-print(vetor_c)
+print('A :', vetor_a)
+print('B :',vetor_b)
+print('C :', vetor_c)
+print('D :', vetor_d)
