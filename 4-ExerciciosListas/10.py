@@ -8,10 +8,11 @@ vetor_b = []
 vetor_c = []
 
 for i in range(10):
-    a = int(input('Vetor A:'))
+    a = int(input('Vetor A: '))
     vetor_a.append(a)
     b = int(input('Vetor B: '))
     vetor_b.append(b)
+    
     vetor_c.append(a)
     vetor_c.append(b)
     
