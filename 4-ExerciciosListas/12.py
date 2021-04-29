@@ -14,12 +14,16 @@ for i in range(3):
     altura = float(input('Entre com a altura cm : '))
     alturas.append(altura)
     
-    altura_media = sum(alturas) / len(alturas)
+    altura_media = sum(alturas) / 3
+    total = 0
     
-    if idade > 13:
-        contar_idade += 1
+for i in range(3):
+    if idades[i] > 13 and alturas[i] < altura_media:
+        total += 1
     
-print('Idade {} '.format(idades))
-print('Altura: {} '.format(alturas))
-print('Alunos {} com menor de 13 anos: '.format(contar_idade))
-print('Altura média {} '.format(altura_media))
+    
+#print('Idade {} '.format(idades))
+#print('Altura: {} '.format(alturas))
+#print('Alunos {} com menor de 13 anos: '.format(contar_idade))
+#print('Altura média {} '.format(altura_media))
+print('Total de alunos com mais de 13 anos e altura inferio a media de altura: {} '.format(total))
