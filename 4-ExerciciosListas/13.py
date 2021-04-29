@@ -14,7 +14,6 @@ for i in range(12):
     temperatura = float(input('Entre com a temperatura do mês {} : '.format(conta_mes)))
     temperaturas.append(temperatura)
     
-    
     media_anual = sum(temperaturas) / len(temperaturas)
     conta_mes += 1
 
@@ -22,3 +21,4 @@ for i in range(12):
     if temperaturas[i] > media_anual and meses[i]:
         teste.append(i+1)
         print(meses[i])
+
