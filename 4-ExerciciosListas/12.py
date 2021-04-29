@@ -7,17 +7,17 @@ idades = []
 alturas = []
 contar_idade = 0
 
-for i in range(3):
+for i in range(30):
     idade = int(input('Entre com a idade: '))
     idades.append(idade)
     
     altura = float(input('Entre com a altura cm : '))
     alturas.append(altura)
     
-    altura_media = sum(alturas) / 3
+    altura_media = sum(alturas) / len(alturas)
     total = 0
     
-for i in range(3):
+for i in range(30):
     if idades[i] > 13 and alturas[i] < altura_media:
         total += 1
     
