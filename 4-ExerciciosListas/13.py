@@ -22,10 +22,3 @@ for i in range(12):
     if temperaturas[i] > media_anual and meses[i]:
         teste.append(i+1)
         print(meses[i])
-
-'''    
-print(media_anual)            
-print(temperaturas)
-print(contar_temperaturas)
-print(teste)
-'''
