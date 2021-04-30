@@ -1,24 +1,34 @@
-'''
-Faça um Programa que peça as quatro notas de 10 alunos, calcule e armazene num vetor a média de cada aluno, imprima o número de alunos com média maior ou igual a 7.0.
-'''
-
 notas = []
-medias  = []
+notas_inverso = []
 soma = 0
-conta_alunos = 1
+sair = 0
+media = 0
+conta_valor_media = 0
+contar_menor_sete = 0
+maior = 7
 
-print('-=-=-=-=-Programa para calcular a media-=-=-=-=-')
-
-for _ in range(3):
-    for _ in range(4):
-        nota = float(input('Entre com a nota do aluno {} : '.format(conta_alunos)))
-        notas.append(nota)
-        media = sum(notas) / len(notas)
-    medias.append(media)
-    if media >= 7.0:
-        soma += 1
-    conta_alunos += 1
-    print('\n')
-    notas.clear()
-        
-print(' [{}] : Número de alunos com nota maior que 7 '.format(soma))
+quantidade_numeros =  int(input('Entre com a quantidade de número: '))
+for i in range(quantidade_numeros):
+    nota = float(input('Entre com as notas: '))
+    notas.append(nota)
+    soma += nota
+    notas_inverso = notas.copy()
+    notas_inverso = notas_inverso[::-1]
+    media = soma / quantidade_numeros
+    
+for j in notas:
+    if j > media:
+        conta_valor_media += 1
+            
+    if j < maior:
+        contar_menor_sete += 1
+    
+print('a. Mostre a quantidade de valores que foram lidos; {} '.format(quantidade_numeros))
+print('b. Exiba todos os valores na ordem em que foram informados, um ao lado do outro; {} '.format(notas))
+print('c. Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro; ')
+for i in notas_inverso:
+    print(i)
+print('d. Calcule e mostre a soma dos valores; {} '.format(soma))
+print('e. Calcule e mostre a média dos valores; {} '.format(media))
+print('f. Calcule e mostre a quantidade de valores acima da média calculada; {} '.format(conta_valor_media))
+print('g. Calcule e mostre a quantidade  de valores  abaixo de sete; {} '.format(contar_menor_sete))
