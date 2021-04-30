@@ -10,12 +10,15 @@ Após esta entrada de dados, faça:
     g. Calcule e mostre a quantidade de valores abaixo de sete;
     h. Encerre o programa com uma mensagem;
 '''
+
+
 notas = []
 notas_inverso = []
 media = 0
 conta_valor_media = 0
 contar_menor_sete = 0
 maior = 7
+
 
 print('=-=-=-=-==-=-Para sair -1=-=-=-=-==-=- ')
 while True:
@@ -30,10 +33,9 @@ while True:
 for j in notas:
     if j > media:
         conta_valor_media += 1
-            
     if j < maior:
         contar_menor_sete += 1
-    
+        
 print('a. Mostre a quantidade de valores que foram lidos; {} '.format(len(notas)))
 print('b. Exiba todos os valores na ordem em que foram informados, um ao lado do outro; {} '.format(notas))
 print('c. Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro; ')
