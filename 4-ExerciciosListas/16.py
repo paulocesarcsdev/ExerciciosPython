@@ -14,3 +14,11 @@ Escreva um programa (usando um array de contadores) que determine quantos vended
     i. $1000 em diante
 Desafio: Crie ma fórmula para chegar na posição da lista a partir do salário, sem fazer vários ifs aninhados.
 '''
+
+valor_venda = []
+
+venda = float(input('Entre com o valor da venda R$. '))
+valor_venda.append(venda)
+
+200  + (9/100) * venda
+
