@@ -8,8 +8,8 @@ Faça um programa para imprimir:
 para um n informado pelo usuário. Use uma função que receba um valor n inteiro e imprima até a n-ésima linha.
 '''
 
-def imprimir(n):
-    for i in range(n):
+def imprimir(numero):
+    for i in range(numero):
         i += 1
         print(str(i) * i)
         

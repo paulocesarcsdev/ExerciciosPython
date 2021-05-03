@@ -7,3 +7,10 @@ Faça um programa para imprimir:
     1   2   3   ...  n
 para um n informado pelo usuário. Use uma função que receba um valor n inteiro imprima até a n-ésima linha.
 '''
+
+def imprimir(numero):
+    for i in range(numero):
+        print(str(i) * i)
+
+n = int(input('Digite um número: '))
+imprimir(n)
