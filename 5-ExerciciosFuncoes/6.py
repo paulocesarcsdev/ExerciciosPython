@@ -8,15 +8,21 @@ Inclua um loop que permita que o usuário repita esse cálculo para novos valore
 '''
 
 def conversao(hora, minuto):
-    hora_pm = hora - 12
-    minuto = minuto
-    return hora_pm, minuto
-
+    if hora > 12:
+        hora_pm = hora - 12
+        print('P.M {}:{} '.format(hora_pm,minuto))
+    else:
+        print('A.M {}:{} '.format(hora,minuto))
 
 def saida():
     print(conversao())
 
-horas = int(input('Entre com a hora no formato 24 horas: '))
-minutos = int(input('Entre com os minutos: '))
 
-convertido = conversao(horas,minutos)
+
+
+while True:
+    horas = int(input('Entre com a hora no formato 24 horas: '))
+    if horas < 0:
+        break
+    minutos = int(input('Entre com os minutos: '))
+    convertido = conversao(horas,minutos)
