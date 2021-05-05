@@ -18,8 +18,8 @@ def saida():
     print(conversao())
 
 
-
-
+print('Programa de conversão PM em AM')
+print('Caso deseje sair digite -1 ')
 while True:
     horas = int(input('Entre com a hora no formato 24 horas: '))
     if horas < 0:
