@@ -10,13 +10,25 @@ O cálculo do valor a ser pago é feito da seguinte forma. Para pagamentos sem a
 Quando houver atraso, cobrar 3% de multa, mais 0,1% de juros por dia de atraso.
 '''
 
-def valorPagamento(valor_restacao,dias_atraso):
-    pass
+def valorPagamento(valor_receber, dias_atraso):
+    juros = 0
+    if dias_atraso == 0:
+        return valor_receber
+    else:
+        juros = 0.1 * dias_atraso
+        return valor_receber + ((3 * valor_receber)/ 100) + juros
+    
 
+contador = 0
+total = 0
 
-valor_prestacao = ('Entre com o valor da prestação R$: ')
-dias_atraso = ('Quantos dias de atraso? ')
-
-resultado = valorPagamento(valor_prestacao,dias_atraso)
-
-print('Valor a ser pago R$ : 'resultado)
+while True:
+    pagamento = float(input('Quando deve pagar: '))
+    if pagamento == 0:
+        break
+    dias = int(input('Digite quantidade de dias de atraso: '))
+    total += valorPagamento(pagamento,dias)
+    contador += 1
+    
+print('Quantidade total  {} '.format(contador) )
+print('Valor das prestações R$ {} '.format(total))
