@@ -9,3 +9,14 @@ o relatório do dia, que conterá a quantidade e o valor total de prestações p
 O cálculo do valor a ser pago é feito da seguinte forma. Para pagamentos sem atraso, cobrar o valor da prestação.
 Quando houver atraso, cobrar 3% de multa, mais 0,1% de juros por dia de atraso.
 '''
+
+def valorPagamento(valor_restacao,dias_atraso):
+    pass
+
+
+valor_prestacao = ('Entre com o valor da prestação R$: ')
+dias_atraso = ('Quantos dias de atraso? ')
+
+resultado = valorPagamento(valor_prestacao,dias_atraso)
+
+print('Valor a ser pago R$ : 'resultado)
