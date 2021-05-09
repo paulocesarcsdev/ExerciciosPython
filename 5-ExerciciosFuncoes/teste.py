@@ -1,24 +1,14 @@
-import random
+def data(data):
+    dia = int(data[0:2])
+    mes = int(data[3:5])
+    ano = int(data[6::])
 
-dado = 0
+    if dia < 1 or dia > 31 or mes > 12 or mes < 1:
+        print('Data inválida')
+        return 0
 
-def craps(dado):
-    dado = random.randrange(2, 13)
-    if dado == 7 or dado == 11:
-        print("You are 'The incredible' and won, your number: ", dado)
-    elif dado == 4 or dado == 5 or dado == 6 or dado == 8 or dado == 9 or dado == 10:
-        print("You are in your point, this is your number: ", dado)
+    meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']    
 
-        ponto = 0
-        while ponto != dado:
-            inp = input("Press ENTER to proceed: ")
-            if inp == "":
-                ponto = random.randrange(2,13)
-                print("Your number is: " , ponto)
-                if ponto == 7:
-                    print("You losed")
-                    break
-    else:
-        print("Craps, you losed!")
-
-craps(dado)
+    novaData = str(dia) + ' de ' + meses[mes - 1] +' de ' + str(ano)
+    return novaData
+print(data('10/12/2000'))
