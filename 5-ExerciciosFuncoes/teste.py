@@ -1,6 +1,19 @@
-import random
-import string
- 
-output_string = ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(10))
- 
-print(output_string)
+def retangulo(l, a):
+    if l > 20:
+        l = 20
+    if a > 20:
+        a = 20
+    print('-+-' * l)
+    c = 0
+    while c < a:
+        z = '|'
+        print(f'{z}{z:>{(l*3 - 1)}}')
+        c += 1
+    print('-+-' * l)
+
+
+l = int(input('Digite a largura: '))
+a = int(input('Digite a altura: '))
+
+
+retangulo(l, a)
