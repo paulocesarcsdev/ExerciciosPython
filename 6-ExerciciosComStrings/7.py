@@ -5,24 +5,23 @@ Conta espaços e vogais. Dado uma string com uma frase informada pelo usuário (
     b. quantas vezes aparecem as vogais a, e, i, o, u.
 '''
 
-palavra = str(input('Entre com a frase/palavra: '))
 
-print(palavra)
-contador = 0
-
-vogais = 'aieou'
-espaco = ' '
-quantidade = palavra.count(vogais)
-
-for i in vogais:
-    if i in palavra:
+def contador_vogaisEspacos(palavra):
+    vogais = 'aieou'
+    espaco = ' '
+    contador_vogais = 0
+    for i in palavra:
         if i in vogais:
-            contador += 1
+            contador_vogais += 1
             
-contar_espaco = 0
-for i in espaco:
-    if i in palavra:
+    contador_espaco = 0
+    for i in palavra:
         if i in espaco:
-            contar_espaco += 1
+            contador_espaco += 1
             
-print('Total de Vogais {} quantidade de espaços {}'.format(contador, contar_espaco))
+    print('Total de Vogais {} , o total des espaços {} '.format(contador_vogais,contador_espaco))
+
+
+palavra = str(input('Entre com a frase/palavra: '))
+contador_vogaisEspacos(palavra)
+
