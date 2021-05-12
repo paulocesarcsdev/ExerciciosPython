@@ -9,3 +9,12 @@ Altere o programa anterior de modo que a escada seja invertida.
     FU
     F
 '''
+
+def nome_vertical(nome):
+    for palavra in range(len(nome)+1):
+        print(nome[palavra:])
+        
+
+
+nome = str(input('Entre com seu nome: ')).upper()
+nome_vertical(nome)
