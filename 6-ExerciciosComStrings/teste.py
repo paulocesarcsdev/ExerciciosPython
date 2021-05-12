@@ -1,12 +1,15 @@
-'''
-def nome_vertical(nome):
-    for palavra in range(len(nome)+1):
-        print(nome[:palavra])
+meses = ['Janeiro', 'Fevereiro', 'Março',  'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro','Outubro', 'Novembro', 'Dezembro']
 
-nome = str(input('Entre com seu nome: ')).upper()
-nome_vertical(nome)
 
-'''
 
-nome = str(input('Entre com seu nome: ')).upper()
-print(nome[:nome])
+
+
+
+data = str(input('Entre com a data de nascimento: '))
+
+dia = data[:2]
+mes = int(data[3:5])
+atual = meses[mes]
+ano = data[6:]
+
+print('Você nasceu em {} de {} de {}'.format(dia,atual,ano))
