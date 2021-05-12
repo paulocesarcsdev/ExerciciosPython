@@ -11,15 +11,15 @@ Informe também se as duas strings possuem o mesmo comprimento e são iguais ou 
 '''
 
 def tamanho_string(wordOne, wordTwo):
-    comprimento1 = len(wordOne)
-    comprimento2 = len(wordTwo)
+    length1 = len(wordOne)
+    length2 = len(wordTwo)
     if wordOne == wordTwo:
         print('A string e igual')
-    elif(comprimento1 == comprimento1):
+    elif(length1 == length2):
         print('As strings tem o mesmo comprimento: ')
     else:
         print('As string são diferentes')  
-    print('A primeira palavra [{}] seu comprimento [{}]a segunda [{}] seu comprimento [{}]'.format(wordOne,comprimento1,wordTwo,comprimento2))
+    print('A primeira palavra [{}] seu comprimento [{}], a segunda [{}] seu comprimento [{}]'.format(wordOne,length1,wordTwo,length2))
 
 
 palavra1 = str(input('Entre com a primeira palavra : '))
