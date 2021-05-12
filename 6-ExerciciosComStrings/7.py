@@ -20,8 +20,10 @@ def contador_vogaisEspacos(palavra):
             contador_espaco += 1
             
     print('Total de Vogais {} , o total des espaços {} '.format(contador_vogais,contador_espaco))
+    
 
 
 palavra = str(input('Entre com a frase/palavra: '))
+print()
 contador_vogaisEspacos(palavra)
 
