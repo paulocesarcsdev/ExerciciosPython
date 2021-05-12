@@ -1,7 +1,12 @@
-def in_both(word1, word2):
-    for letter in word1:
-        if letter in word2:
-            print(letter)
-            
-            
-in_both('banana', 'batata')
+'''
+def nome_vertical(nome):
+    for palavra in range(len(nome)+1):
+        print(nome[:palavra])
+
+nome = str(input('Entre com seu nome: ')).upper()
+nome_vertical(nome)
+
+'''
+
+nome = str(input('Entre com seu nome: ')).upper()
+print(nome[:nome])
