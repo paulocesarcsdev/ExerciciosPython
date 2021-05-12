@@ -9,3 +9,23 @@ Informe também se as duas strings possuem o mesmo comprimento e são iguais ou 
     As duas strings são de tamanhos diferentes.
     As duas strings possuem conteúdo diferente.
 '''
+
+def tamanho_string(wordOne, wordTwo):
+    comprimento1 = len(wordOne)
+    comprimento2 = len(wordTwo)
+    if wordOne == wordTwo:
+        print('A string e igual')
+    elif(comprimento1 == comprimento1):
+        print('As strings tem o mesmo comprimento: ')
+    else:
+        print('As string são diferentes')  
+    print('A primeira palavra [{}] seu comprimento [{}]a segunda [{}] seu comprimento [{}]'.format(wordOne,comprimento1,wordTwo,comprimento2))
+
+
+palavra1 = str(input('Entre com a primeira palavra : '))
+palavra2 = str(input('Entre com a segunda palavra : '))
+tamanho_string(palavra1,palavra2)
+
+
+
+
