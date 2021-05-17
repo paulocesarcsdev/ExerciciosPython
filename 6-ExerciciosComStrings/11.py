@@ -17,3 +17,17 @@ O jogador poderá errar 6 vezes antes de ser enforcado.
     -> Você errou pela 2ª vez. Tente de novo!
 
 '''
+
+
+
+palavra = 'abacate'
+vetor = []
+
+while(True):
+    letra = str(input('Entre com a letra '))
+
+    if letra in palavra:
+        vetor.append(letra)
+        print(vetor)
+    else:
+        print('não esta')
