@@ -23,11 +23,15 @@ O jogador poderá errar 6 vezes antes de ser enforcado.
 palavra = 'abacate'
 vetor = []
 
+
+tamanho = len(palavra)
+
+print(tamanho*'_')
 while(True):
     letra = str(input('Entre com a letra '))
-
     if letra in palavra:
         vetor.append(letra)
         print(vetor)
+        print(palavra.find(letra))
     else:
         print('não esta')
