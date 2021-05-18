@@ -27,9 +27,9 @@ letras_certas = []
 for i in range(0,len(palavra)):
     letras_certas.append('_')
     
-acertou = False
+acertou = 0
 
-while(acertou == False):
+while(acertou <= 6):
     letra = str(input('Entre com a letra '))
     
     for i in range(0, len(palavra)):
