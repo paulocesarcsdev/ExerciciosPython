@@ -20,18 +20,24 @@ O jogador poderá errar 6 vezes antes de ser enforcado.
 
 
 
-palavra = 'abacate'
-vetor = []
+palavra = ['a', 'b', 'a', 'c', 'a', 't', 'e']
+letras_certas = []
 
 
-tamanho = len(palavra)
+for i in range(0,len(palavra)):
+    letras_certas.append('_')
+    
+acertou = False
 
-print(tamanho*'_')
-while(True):
+while(acertou == False):
     letra = str(input('Entre com a letra '))
-    if letra in palavra:
-        vetor.append(letra)
-        print(vetor)
-        print(palavra.find(letra))
-    else:
-        print('não esta')
+    
+    for i in range(0, len(palavra)):
+        if letra == palavra[i]:
+            letras_certas[i] == letra
+        print(letras_certas[i])
+    acertou = True
+    
+    for j in range(0, len(letras_certas)):
+        if letras_certas[j] == '_':
+            acertou = False
