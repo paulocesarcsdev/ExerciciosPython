@@ -24,20 +24,16 @@ palavra = ['a', 'b', 'a', 'c', 'a', 't', 'e']
 letras_certas = []
 
 
-for i in range(0,len(palavra)):
-    letras_certas.append('_')
+for i in palavra:
+    #letras_certas.append('_')
+    print('_', end=' ')
     
+print('\n')    
 acertou = 0
 
-while(acertou <= 6):
+while(True):
     letra = str(input('Entre com a letra '))
-    
-    for i in range(0, len(palavra)):
-        if letra == palavra[i]:
-            letras_certas[i] == letra
-        print(letras_certas[i])
-    acertou = True
-    
-    for j in range(0, len(letras_certas)):
-        if letras_certas[j] == '_':
-            acertou = False
+    if letra in palavra:
+        letras_certas.append(letra)
+    else:
+        print('Não acerto tente novamente: ')
