@@ -25,15 +25,18 @@ tentativas = []
 vocabulario = ["esquistossomose", "naftalina", 
                "ribonucleico", "idiossincratico", 
                "fagocitose", "quinquagesimo"]
-
-
 palavra = choice(vocabulario)
 
-for letra in palavra:
-    print('_', end= ' ')
+
+
     
 while True:
-    palpite = input("\nEntre com seu palpite ou 'SAIR' oara sair do programa. ").lower()
+    for letra in palavra:
+        if letra in tentativas:
+            print(letra, end = ' ')
+        else:
+            print('_', end= ' ')
+    palpite = input("\nEntre com seu palpite ou 'SAIR' oara sair do programa: ").lower()
     if palpite == 'sair':
         break
     elif palpite not in alfabeto or palpite == '':
