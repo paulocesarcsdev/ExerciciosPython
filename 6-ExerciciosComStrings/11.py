@@ -26,16 +26,20 @@ vocabulario = ["esquistossomose", "naftalina",
                "ribonucleico", "idiossincratico", 
                "fagocitose", "quinquagesimo"]
 palavra = choice(vocabulario)
-
+chances = 6
 
 
     
 while True:
+    #print(tentativas)
+    print('Chances :', chances)
+    
     for letra in palavra:
         if letra in tentativas:
             print(letra, end = ' ')
         else:
             print('_', end= ' ')
+            
     palpite = input("\nEntre com seu palpite ou 'SAIR' oara sair do programa: ").lower()
     if palpite == 'sair':
         break
@@ -50,3 +54,10 @@ while True:
         print('Correto')
     else:
         print('Erro tente novamente')
+        chances -= 1
+    if chances == 0:
+        print('Todas tentativas esgostadas fim de jogo: ')
+        break
+    elif set(palavra).issubset(set(tentativas)):
+        print('Parabéns acertou: ')
+        break
