@@ -18,22 +18,32 @@ O jogador poderá errar 6 vezes antes de ser enforcado.
 
 '''
 
+from random import choice
+
+alfabeto = list("abdcefghijklmnopqrstuvwxyz")
+tentativas = []
+vocabulario = ["esquistossomose", "naftalina", 
+               "ribonucleico", "idiossincratico", 
+               "fagocitose", "quinquagesimo"]
 
 
-palavra = ['a', 'b', 'a', 'c', 'a', 't', 'e']
-letras_certas = []
+palavra = choice(vocabulario)
 
-
-for i in palavra:
-    #letras_certas.append('_')
-    print('_', end=' ')
+for letra in palavra:
+    print('_', end= ' ')
     
-print('\n')    
-acertou = 0
-
-while(True):
-    letra = str(input('Entre com a letra '))
-    if letra in palavra:
-        letras_certas.append(letra)
+while True:
+    palpite = input("\nEntre com seu palpite ou 'SAIR' oara sair do programa. ").lower()
+    if palpite == 'sair':
+        break
+    elif palpite not in alfabeto or palpite == '':
+        print("Iss não e uma letra")
+        continue
+    elif palpite in tentativas:
+        print('Letra repetida tente novamente')
+        continue
+    tentativas.append(palpite)
+    if palpite in palavra:
+        print('Correto')
     else:
-        print('Não acerto tente novamente: ')
+        print('Erro tente novamente')
