@@ -13,8 +13,11 @@ O usuário pode informar o número com ou sem o traço separador.
 
 
 '''
-telefone = []
+telefone = ''
 for i in range(7):
     numero = str(input('Digite o número : '))
-    telefone.append(numero)
-    print(telefone)
+    telefone = numero
+    if telefone in numero < 7:
+        print('Erro tem valor menor que  7: ')
+    else:
+        print('OK')
