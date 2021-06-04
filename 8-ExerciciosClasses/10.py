@@ -12,4 +12,5 @@ Classe Bomba de Combustível: Faça um programa completo utilizando classes e m�
         3. alterarValor( ) – altera o valor do litro do combustível.
         4. alterarCombustivel( ) – altera o tipo do combustível.
         5. alterarQuantidadeCombustivel( ) – altera a quantidade de combustível restante na bomba.
+OBS: Sempre que acontecer um abastecimento é necessário atualizar a quantidade de combustível total na bomba.
 '''
