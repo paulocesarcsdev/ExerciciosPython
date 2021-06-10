@@ -13,11 +13,16 @@ O usuário pode informar o número com ou sem o traço separador.
 
 
 '''
-telefone = ''
-for i in range(7):
-    numero = str(input('Digite o número : '))
-    telefone = numero
-    if telefone in numero < 7:
-        print('Erro tem valor menor que  7: ')
-    else:
-        print('OK')
+#telefone = ''
+
+telefone = str(input('Entre com o numero: '))
+
+contar_string = len(telefone)
+
+if contar_string < 7:
+    print('Falta numeros: ')
+else:
+    print('O numero {}'.format(telefone))
+
+#print(telefone)
+
